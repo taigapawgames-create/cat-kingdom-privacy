@@ -13,7 +13,7 @@
     h2 { margin-top: 1.8rem; }
     .meta { color: #5f6368; }
     .notice { padding: 14px 16px; border: 1px solid #dadce0; border-radius: 10px; background: #fafafa; }
-    a { color: inherit; }
+    a { color: inherit; overflow-wrap: anywhere; }
     hr { border: 0; border-top: 1px solid #e0e0e0; margin: 32px 0; }
   </style>
 </head>
@@ -22,92 +22,126 @@
   <article>
     <h1>Datenschutzerklärung</h1>
     <p class="meta"><strong>Cat Kingdom: The Treat Wars</strong> · Entwickler: <strong>TaigaPaw Games</strong><br>
-    Stand: 24. September 2026</p>
+    Stand: 1. Oktober 2026</p>
 
-    <div class="notice">
-      <strong>Kontakt:</strong> taigapawgames@gmail.com
-    </div>
+    <div class="notice"><strong>Kontakt:</strong> taigapawgames@gmail.com</div>
 
     <h2>1. Allgemeines</h2>
-    <p>Diese Datenschutzerklärung beschreibt den Umgang mit Daten in der aktuell veröffentlichten Version von
+    <p>Diese Datenschutzerklärung beschreibt den Umgang mit Daten im aktuellen Android-Closed-Test-Build von
     <strong>Cat Kingdom: The Treat Wars</strong>.</p>
 
-    <h2>2. Erhebung personenbezogener Daten</h2>
-    <p>Die aktuelle Version der App erhebt, überträgt oder teilt nach unserem derzeitigen Funktionsumfang keine
-    personenbezogenen Nutzerdaten oder Gerätedaten mit TaigaPaw Games oder Dritten.</p>
-    <p>Die App verwendet derzeit insbesondere keine Benutzerkonten, keine Analyse- oder Tracking-Dienste und keine
-    Werbenetzwerke.</p>
+    <h2>2. Lokale Spieldaten</h2>
+    <p>Spielstand, Fortschritt, Sterne, Talente, Einstellungen und Sprachwahl werden lokal auf dem Gerät gespeichert.
+    TaigaPaw Games betreibt im aktuellen Build kein eigenes Benutzerkonto- oder Cloud-Save-System und erhält diese
+    lokalen Spielstandsdaten nicht automatisch.</p>
 
-    <h2>3. Lokale Spieldaten</h2>
-    <p>Spielstände, Fortschritt und Einstellungen können lokal auf dem Gerät gespeichert werden. Diese Daten verbleiben
-    auf dem Gerät und werden von der aktuellen Version der App nicht an TaigaPaw Games übertragen.</p>
+    <h2>3. Rewarded Ads / Google AdMob</h2>
+    <p>Der aktuelle Build enthält das <strong>Google Mobile Ads SDK (AdMob)</strong>. Derzeit werden ausschließlich
+    Rewarded Ads verwendet: Eine Anzeige wird nur nach einer ausdrücklichen Aktion des Spielers gestartet und kann nach
+    Erfüllung der Reward-Bedingung eine In-Game-Belohnung auslösen.</p>
+    <p>Im aktuellen Closed Test werden ausschließlich die offiziellen Google-Test-App-/Test-Anzeigen-IDs verwendet.
+    Banner- und Interstitial-Anzeigen sind derzeit nicht aktiviert.</p>
+    <p>Nach Angaben von Google kann das Google Mobile Ads SDK insbesondere IP-Adressen, Produkt-/Anzeigeninteraktionen,
+    Diagnose- und Leistungsinformationen sowie Geräte- und Konto-Kennungen verarbeiten. Google beschreibt diese
+    Verarbeitung für Werbe-, Analyse- und Betrugspräventionszwecke.</p>
+    <p>Weitere Informationen:
+    <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads – Data disclosure</a><br>
+    <a href="https://policies.google.com/privacy">Google-Datenschutzerklärung</a></p>
 
-    <h2>4. Google Play</h2>
-    <p>Die App wird über Google Play bereitgestellt. Google kann im Zusammenhang mit dem Download, der Installation,
-    Geräte- und Kontofunktionen eigene Daten verarbeiten. Diese Verarbeitung erfolgt durch Google und richtet sich nach
-    den Datenschutzbestimmungen von Google.</p>
+    <h2>4. Einwilligung / EWR und Vereinigtes Königreich</h2>
+    <p>Der aktuelle Closed-Test-Build verwendet noch keinen produktiven Google-UMP-Consent-Flow. Bevor echte
+    AdMob-Anzeigen für eine öffentliche Produktionsversion aktiviert werden, wird eine geeignete Google-zertifizierte
+    Einwilligungslösung (z. B. Google User Messaging Platform / UMP) für anwendbare Regionen integriert und getestet.</p>
+    <p>Weitere Informationen:
+    <a href="https://developers.google.com/admob/android/privacy/ad-serving-modes">Google – Ad serving modes / consent</a></p>
 
-    <h2>5. Werbung und In-App-Käufe</h2>
-    <p>Die aktuell veröffentlichte Version enthält keine Werbung und keine von TaigaPaw Games eingebauten
-    Werbe- oder Tracking-SDKs. Falls künftig Werbung, Analysefunktionen, In-App-Käufe oder andere Dienste integriert
-    werden, wird diese Datenschutzerklärung vor Veröffentlichung der entsprechenden Version aktualisiert.</p>
+    <h2>5. Käufe</h2>
+    <p>Im aktuellen Closed-Test-Build sind keine aktiven Echtgeldkäufe freigeschaltet. Store-, Supporter- und
+    Starterpaket-Bereiche sind derzeit nicht mit einer aktiven Google-Play-Billing-Abwicklung verbunden.</p>
 
-    <h2>6. Kinder und Jugendliche</h2>
-    <p>Da die aktuelle Version keine personenbezogenen Daten an TaigaPaw Games überträgt, findet durch TaigaPaw Games
-    auch keine gezielte Erhebung personenbezogener Daten von Kindern oder Jugendlichen statt.</p>
+    <h2>6. Analyse, Konten und eigene Server</h2>
+    <p>TaigaPaw Games verwendet im aktuellen Build kein eigenes Analytics-SDK, kein eigenes Benutzerkonto-System und
+    keinen eigenen Server zur Übertragung des Spielstands. Das Google Mobile Ads SDK kann jedoch die oben beschriebenen
+    Diagnose-, Interaktions- und Kennungsdaten verarbeiten.</p>
 
-    <h2>7. Änderungen dieser Datenschutzerklärung</h2>
-    <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen der App oder rechtliche Anforderungen
-    ändern. Die jeweils aktuelle Fassung wird unter derselben öffentlichen URL bereitgestellt.</p>
+    <h2>7. Google Play</h2>
+    <p>Die App wird über Google Play bereitgestellt. Google kann im Zusammenhang mit Download, Installation,
+    Gerätefunktionen und Google-Konto eigene Daten verarbeiten. Diese Verarbeitung richtet sich nach den
+    Datenschutzbestimmungen von Google.</p>
 
-    <h2>8. Kontakt</h2>
-    <p>Bei Fragen zum Datenschutz in <strong>Cat Kingdom: The Treat Wars</strong> kannst du TaigaPaw Games unter
-    <strong>taigapawgames@gmail.com</strong> kontaktieren.</p>
+    <h2>8. Zielgruppe</h2>
+    <p>Der aktuelle Closed Test ist für Erwachsene vorgesehen. Vor einer Änderung der Zielgruppe werden Werbe-,
+    Datenschutz- und Google-Play-Angaben erneut geprüft.</p>
+
+    <h2>9. Rechte und Kontakt</h2>
+    <p>Soweit TaigaPaw Games personenbezogene Daten als Verantwortlicher verarbeitet, können betroffene Personen die
+    ihnen nach anwendbarem Datenschutzrecht zustehenden Rechte geltend machen. Datenschutzanfragen:
+    <strong>taigapawgames@gmail.com</strong>.</p>
+
+    <h2>10. Änderungen</h2>
+    <p>Diese Datenschutzerklärung wird angepasst, wenn sich Funktionen, eingebundene Dienste oder die Datenverarbeitung
+    ändern.</p>
   </article>
 
   <article lang="en">
     <h1>Privacy Policy</h1>
     <p class="meta"><strong>Cat Kingdom: The Treat Wars</strong> · Developer: <strong>TaigaPaw Games</strong><br>
-    Effective date: September 24, 2026</p>
+    Last updated: October 1, 2026</p>
 
-    <div class="notice">
-      <strong>Contact:</strong> taigapawgames@gmail.com
-    </div>
+    <div class="notice"><strong>Contact:</strong> taigapawgames@gmail.com</div>
 
     <h2>1. General</h2>
-    <p>This Privacy Policy describes how data is handled in the currently published version of
+    <p>This Privacy Policy describes data handling in the current Android closed-test build of
     <strong>Cat Kingdom: The Treat Wars</strong>.</p>
 
-    <h2>2. Personal data collection</h2>
-    <p>Based on the current functionality of the app, the current version does not collect, transmit, or share
-    personal user data or device data with TaigaPaw Games or third parties.</p>
-    <p>The app currently does not use user accounts, analytics or tracking services, or advertising networks.</p>
+    <h2>2. Local game data</h2>
+    <p>Save data, progress, stars, talents, settings, and language selection are stored locally on the device.
+    TaigaPaw Games does not operate its own user-account or cloud-save system for the current build and does not
+    automatically receive this local save data.</p>
 
-    <h2>3. Local game data</h2>
-    <p>Save data, progress, and settings may be stored locally on the device. In the current version, this data remains
-    on the device and is not transmitted to TaigaPaw Games.</p>
+    <h2>3. Rewarded Ads / Google AdMob</h2>
+    <p>The current build includes the <strong>Google Mobile Ads SDK (AdMob)</strong>. The game currently uses rewarded
+    ads only: an ad is started only after an explicit player action and may grant an in-game reward after the reward
+    condition is completed.</p>
+    <p>The current closed test uses only Google's official test app / test ad IDs. Banner and interstitial ads are not
+    currently enabled.</p>
+    <p>According to Google, the Google Mobile Ads SDK may process IP addresses, product/ad interactions, diagnostic and
+    performance information, and device/account identifiers. Google describes these uses as supporting advertising,
+    analytics, and fraud prevention.</p>
+    <p>More information:
+    <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads – Data disclosure</a><br>
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
 
-    <h2>4. Google Play</h2>
-    <p>The app is distributed through Google Play. Google may process data in connection with downloads, installation,
-    device functions, and account services. Such processing is performed by Google and is governed by Google's own
-    privacy policies.</p>
+    <h2>4. Consent / EEA and United Kingdom</h2>
+    <p>The current closed-test build does not yet use a production Google UMP consent flow. Before live AdMob ads are
+    enabled for a public production release, an appropriate Google-certified consent solution (for example Google User
+    Messaging Platform / UMP) will be integrated and tested for applicable regions.</p>
+    <p>More information:
+    <a href="https://developers.google.com/admob/android/privacy/ad-serving-modes">Google – Ad serving modes / consent</a></p>
 
-    <h2>5. Advertising and in-app purchases</h2>
-    <p>The currently published version does not contain advertising or advertising/tracking SDKs integrated by
-    TaigaPaw Games. If advertising, analytics, in-app purchases, or other services are added in the future, this
-    Privacy Policy will be updated before that version is released.</p>
+    <h2>5. Purchases</h2>
+    <p>No real-money purchases are currently enabled in the closed-test build. Store, supporter, and starter-pack areas
+    are not currently connected to an active Google Play Billing purchase flow.</p>
 
-    <h2>6. Children and minors</h2>
-    <p>Because the current version does not transmit personal data to TaigaPaw Games, TaigaPaw Games does not knowingly
-    collect personal data from children or minors through the current version.</p>
+    <h2>6. Analytics, accounts, and own servers</h2>
+    <p>TaigaPaw Games does not currently use its own analytics SDK, user-account system, or server for uploading save
+    data. The Google Mobile Ads SDK may still process its own diagnostic, interaction, and identifier data as described
+    above.</p>
 
-    <h2>7. Changes to this Privacy Policy</h2>
-    <p>This Privacy Policy may be updated if app functionality or legal requirements change. The current version will
-    remain available at the same public URL.</p>
+    <h2>7. Google Play</h2>
+    <p>The app is distributed through Google Play. Google may process data related to downloads, installation, device
+    functions, and Google account services under Google's own privacy terms.</p>
 
-    <h2>8. Contact</h2>
-    <p>For privacy-related questions about <strong>Cat Kingdom: The Treat Wars</strong>, contact TaigaPaw Games at
-    <strong>taigapawgames@gmail.com</strong>.</p>
+    <h2>8. Audience</h2>
+    <p>The current closed test is intended for adults. Advertising, privacy, and Google Play disclosures will be reviewed
+    again before any audience configuration is changed.</p>
+
+    <h2>9. Rights and contact</h2>
+    <p>Where TaigaPaw Games processes personal data as a controller, data subjects may exercise the rights available to
+    them under applicable data-protection law. Privacy requests: <strong>taigapawgames@gmail.com</strong>.</p>
+
+    <h2>10. Changes</h2>
+    <p>This Privacy Policy will be updated when app functionality, integrated services, or data handling changes.</p>
   </article>
 </main>
 </body>
