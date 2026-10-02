@@ -22,7 +22,7 @@
   <article>
     <h1>Datenschutzerklärung</h1>
     <p class="meta"><strong>Cat Kingdom: The Treat Wars</strong> · Entwickler: <strong>TaigaPaw Games</strong><br>
-    Stand: 1. Oktober 2026</p>
+    Stand: 2. Oktober 2026</p>
 
     <div class="notice"><strong>Kontakt:</strong> taigapawgames@gmail.com</div>
 
@@ -39,8 +39,10 @@
     <p>Der aktuelle Build enthält das <strong>Google Mobile Ads SDK (AdMob)</strong>. Derzeit werden ausschließlich
     Rewarded Ads verwendet: Eine Anzeige wird nur nach einer ausdrücklichen Aktion des Spielers gestartet und kann nach
     Erfüllung der Reward-Bedingung eine In-Game-Belohnung auslösen.</p>
-    <p>Im aktuellen Closed Test werden ausschließlich die offiziellen Google-Test-App-/Test-Anzeigen-IDs verwendet.
-    Banner- und Interstitial-Anzeigen sind derzeit nicht aktiviert.</p>
+    <p>Im aktuellen Closed Test verwendet die Rewarded-Werbung ausschließlich die offizielle Google-Test-Werbeeinheit.
+    Die Cat-Kingdom-AdMob-App-ID wird verwendet, damit Google die für diese App veröffentlichten
+    Datenschutz-/Einwilligungsnachrichten zuordnen kann. Echte Cat-Kingdom-Werbeeinheiten sind in diesem Build nicht
+    aktiviert. Banner- und Interstitial-Anzeigen sind derzeit nicht aktiviert.</p>
     <p>Nach Angaben von Google kann das Google Mobile Ads SDK insbesondere IP-Adressen, Produkt-/Anzeigeninteraktionen,
     Diagnose- und Leistungsinformationen sowie Geräte- und Konto-Kennungen verarbeiten. Google beschreibt diese
     Verarbeitung für Werbe-, Analyse- und Betrugspräventionszwecke.</p>
@@ -48,12 +50,20 @@
     <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads – Data disclosure</a><br>
     <a href="https://policies.google.com/privacy">Google-Datenschutzerklärung</a></p>
 
-    <h2>4. Einwilligung / EWR und Vereinigtes Königreich</h2>
-    <p>Der aktuelle Closed-Test-Build verwendet noch keinen produktiven Google-UMP-Consent-Flow. Bevor echte
-    AdMob-Anzeigen für eine öffentliche Produktionsversion aktiviert werden, wird eine geeignete Google-zertifizierte
-    Einwilligungslösung (z. B. Google User Messaging Platform / UMP) für anwendbare Regionen integriert und getestet.</p>
+    <h2>4. Einwilligung und Datenschutzoptionen / Google UMP</h2>
+    <p>Der aktuelle Closed-Test-Build integriert die <strong>Google User Messaging Platform (UMP)</strong>. Beim
+    App-Start wird der Einwilligungsstatus über UMP aktualisiert. Wenn Google für den Nutzer bzw. dessen Region eine
+    veröffentlichte Datenschutz-/Einwilligungsnachricht als erforderlich meldet, wird die native Google-Nachricht
+    angezeigt, bevor Anzeigen angefordert werden.</p>
+    <p>Rewarded Ads werden erst initialisiert bzw. geladen, wenn UMP meldet, dass Anzeigen angefordert werden dürfen.
+    Die konkrete Auswahl des Nutzers wird von UMP an das Google Mobile Ads SDK weitergegeben. Wenn UMP einen erneuten
+    Zugang zu Datenschutzoptionen verlangt, erscheint in den Spieleinstellungen der Eintrag
+    <strong>„Datenschutzoptionen“</strong>, über den die Google-Datenschutzmaske erneut geöffnet werden kann.</p>
+    <p>Welche Nachrichten tatsächlich angezeigt werden, hängt von den für die App in Google AdMob unter
+    „Datenschutz und Mitteilungen / Privacy &amp; messaging“ veröffentlichten Nachrichten und den anwendbaren
+    regionalen Anforderungen ab.</p>
     <p>Weitere Informationen:
-    <a href="https://developers.google.com/admob/android/privacy/ad-serving-modes">Google – Ad serving modes / consent</a></p>
+    <a href="https://developers.google.com/admob/android/privacy">Google UMP / Privacy</a></p>
 
     <h2>5. Käufe</h2>
     <p>Im aktuellen Closed-Test-Build sind keine aktiven Echtgeldkäufe freigeschaltet. Store-, Supporter- und
@@ -61,8 +71,8 @@
 
     <h2>6. Analyse, Konten und eigene Server</h2>
     <p>TaigaPaw Games verwendet im aktuellen Build kein eigenes Analytics-SDK, kein eigenes Benutzerkonto-System und
-    keinen eigenen Server zur Übertragung des Spielstands. Das Google Mobile Ads SDK kann jedoch die oben beschriebenen
-    Diagnose-, Interaktions- und Kennungsdaten verarbeiten.</p>
+    keinen eigenen Server zur Übertragung des Spielstands. Das Google Mobile Ads SDK und UMP können jedoch die oben
+    beschriebenen Daten im Zusammenhang mit Werbung, Einwilligung, Diagnose, Interaktionen und Kennungen verarbeiten.</p>
 
     <h2>7. Google Play</h2>
     <p>Die App wird über Google Play bereitgestellt. Google kann im Zusammenhang mit Download, Installation,
@@ -86,7 +96,7 @@
   <article lang="en">
     <h1>Privacy Policy</h1>
     <p class="meta"><strong>Cat Kingdom: The Treat Wars</strong> · Developer: <strong>TaigaPaw Games</strong><br>
-    Last updated: October 1, 2026</p>
+    Last updated: October 2, 2026</p>
 
     <div class="notice"><strong>Contact:</strong> taigapawgames@gmail.com</div>
 
@@ -103,8 +113,9 @@
     <p>The current build includes the <strong>Google Mobile Ads SDK (AdMob)</strong>. The game currently uses rewarded
     ads only: an ad is started only after an explicit player action and may grant an in-game reward after the reward
     condition is completed.</p>
-    <p>The current closed test uses only Google's official test app / test ad IDs. Banner and interstitial ads are not
-    currently enabled.</p>
+    <p>The current closed test uses Google's official test rewarded-ad unit for rewarded ads. The Cat Kingdom AdMob
+    app ID is used so Google can associate the app with its published privacy/consent messages. Live Cat Kingdom
+    ad-unit IDs are not enabled in this build. Banner and interstitial ads are not currently enabled.</p>
     <p>According to Google, the Google Mobile Ads SDK may process IP addresses, product/ad interactions, diagnostic and
     performance information, and device/account identifiers. Google describes these uses as supporting advertising,
     analytics, and fraud prevention.</p>
@@ -112,12 +123,18 @@
     <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads – Data disclosure</a><br>
     <a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
 
-    <h2>4. Consent / EEA and United Kingdom</h2>
-    <p>The current closed-test build does not yet use a production Google UMP consent flow. Before live AdMob ads are
-    enabled for a public production release, an appropriate Google-certified consent solution (for example Google User
-    Messaging Platform / UMP) will be integrated and tested for applicable regions.</p>
+    <h2>4. Consent and privacy options / Google UMP</h2>
+    <p>The current closed-test build integrates the <strong>Google User Messaging Platform (UMP)</strong>. On app
+    launch, consent information is refreshed through UMP. If Google reports that a published privacy/consent message is
+    required for the user or their region, Google's native message is shown before ads are requested.</p>
+    <p>Rewarded ads are initialized/loaded only after UMP reports that ads may be requested. The user's actual privacy
+    choices are propagated by UMP to the Google Mobile Ads SDK. If UMP reports that the user must have an entry point
+    to review privacy choices, a <strong>Privacy Options</strong> entry appears in Settings and opens Google's native
+    privacy-options form.</p>
+    <p>The exact messages shown depend on the messages published for the app in Google AdMob under Privacy &amp;
+    messaging and on applicable regional requirements.</p>
     <p>More information:
-    <a href="https://developers.google.com/admob/android/privacy/ad-serving-modes">Google – Ad serving modes / consent</a></p>
+    <a href="https://developers.google.com/admob/android/privacy">Google UMP / Privacy</a></p>
 
     <h2>5. Purchases</h2>
     <p>No real-money purchases are currently enabled in the closed-test build. Store, supporter, and starter-pack areas
@@ -125,8 +142,8 @@
 
     <h2>6. Analytics, accounts, and own servers</h2>
     <p>TaigaPaw Games does not currently use its own analytics SDK, user-account system, or server for uploading save
-    data. The Google Mobile Ads SDK may still process its own diagnostic, interaction, and identifier data as described
-    above.</p>
+    data. The Google Mobile Ads SDK and UMP may still process data related to advertising, consent, diagnostics,
+    interactions, and identifiers as described above.</p>
 
     <h2>7. Google Play</h2>
     <p>The app is distributed through Google Play. Google may process data related to downloads, installation, device
